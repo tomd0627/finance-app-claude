@@ -1,0 +1,16 @@
+{
+	"name": "finance-tracker",
+	"private": true,
+	"scripts": {
+		"dev": "concurrently -n server,client -c blue,green \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+		"build": "pnpm --filter shared build && pnpm --filter server build && pnpm --filter client build",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.0",
+		"concurrently": "^9.0.0",
+		"typescript": "^5.7.0"
+	}
+}
