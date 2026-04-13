@@ -9,8 +9,8 @@
 		"format": "biome format --write ."
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.0",
-		"concurrently": "^9.0.0",
-		"typescript": "^5.7.0"
+		"@biomejs/biome": "^2.4.11",
+		"concurrently": "^9.2.1",
+		"typescript": "^6.0.2"
 	}
 }
